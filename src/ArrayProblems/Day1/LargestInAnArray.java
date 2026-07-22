@@ -1,5 +1,5 @@
 //Given an array arr[]. The task is to find the largest element and return it.
-package ArrayProblems;
+package ArrayProblems.Day1;
 
 public class LargestInAnArray
 {

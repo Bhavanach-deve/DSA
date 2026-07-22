@@ -1,5 +1,5 @@
 //Given an array arr[], check whether it is sorted in non-decreasing order. Return true if it is sorted otherwise false.
-package ArrayProblems;
+package ArrayProblems.Day1;
 
 public class CheckIfAnArrayIsSorted
 {
