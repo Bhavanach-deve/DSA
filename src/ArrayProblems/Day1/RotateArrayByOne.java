@@ -27,13 +27,28 @@ public class RotateArrayByOne
             System.out.print(nums+" ");
         }
     }
+    public static void rotateArrCounterClock(int arr[])
+    {
+        int first=arr[0];
+        for(int i=0;i<arr.length-1;i++){
+            arr[i]=arr[i+1];
+        }
+        arr[arr.length-1]=first;
+        for(int nums:arr){
+            System.out.print(nums+" ");
+        }
+
+    }
 
     public static void main(String[] args)
     {
         int arr[]={9,8,7,6,4,2,1,3};
+        System.out.println("Clock-Wise:");
         rotateBruteForce(arr);
         System.out.println();
         rotateOptimal(arr);
-
+        System.out.println();
+        System.out.println("AntiClockWise: ");
+        rotateArrCounterClock(arr);
     }
 }
