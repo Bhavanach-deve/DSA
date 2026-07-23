@@ -2,7 +2,7 @@ package ArrayProblems.Day2;
 
 import java.util.Arrays;
 
-public class SquaresOfASortedArray
+public class SquaresOfASortedArrayLeetCode
 {
     public static int [] sortedSquares(int arr[])
     {
