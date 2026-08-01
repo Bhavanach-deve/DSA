@@ -1,3 +1,5 @@
+//Given an image represented by m x n matrix, rotate the image by 90 degrees in clockwise direction. Please note the dimensions of the result matrix are going to n x m for an m x n input matrix.
+
 package ArrayProblems.Day5;
 
 public class RotateImage
