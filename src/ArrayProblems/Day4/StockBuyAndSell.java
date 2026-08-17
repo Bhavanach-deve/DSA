@@ -22,7 +22,6 @@ public class StockBuyAndSell
                 maxProfit = profit;
             }
         }
-
         return maxProfit;
     }
 

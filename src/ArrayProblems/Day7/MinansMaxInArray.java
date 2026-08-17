@@ -1,3 +1,4 @@
+//Find the maximum and minimum element in one traversal.
 package ArrayProblems.Day7;
 
 import java.util.ArrayList;
