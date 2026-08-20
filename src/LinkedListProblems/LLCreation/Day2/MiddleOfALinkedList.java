@@ -2,7 +2,7 @@
 //
 //If the number of nodes is odd, return the middle node value.
 //If the number of nodes is even, there are two middle nodes, so return the second middle node value.
-package LinkedListProblems.LLCreation;
+package LinkedListProblems.LLCreation.Day2;
 
 class Nodee
 {
@@ -36,6 +36,10 @@ public class MiddleOfALinkedList
         n.next.next=new Nodee(3);
         n.next.next.next=new Nodee(4);
         n.next.next.next.next=new Nodee(5);
+        n.next.next.next.next.next=new Nodee(6);
+        n.next.next.next.next.next.next=new Nodee(7);
+        n.next.next.next.next.next.next.next=new Nodee(8);
+
         Nodee middle=getMiddle(n);
         System.out.println("Middle element: "+middle.data);
 

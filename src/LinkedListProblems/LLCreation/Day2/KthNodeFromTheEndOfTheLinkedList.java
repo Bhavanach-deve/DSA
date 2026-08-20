@@ -1,5 +1,5 @@
 //Given the head of a linked list and an integer k, return the kth node from the end of the linked list. If k is greater than the number of nodes in the list, return -1.
-package LinkedListProblems.LLCreation;
+package LinkedListProblems.LLCreation.Day2;
 
 class Nod{
 

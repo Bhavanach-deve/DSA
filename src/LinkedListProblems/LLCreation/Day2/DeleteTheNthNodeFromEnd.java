@@ -1,5 +1,5 @@
 //Delete Nth node from the end of the given linked list
-package LinkedListProblems.LLCreation;
+package LinkedListProblems.LLCreation.Day2;
 
 class Nody
 {

@@ -1,4 +1,4 @@
-package LinkedListProblems.LLCreation;
+package LinkedListProblems.LLCreation.Day1;
 
 class Node {
     int data;

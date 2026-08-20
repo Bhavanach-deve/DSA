@@ -1,5 +1,5 @@
 //Given the head of a singly linked list. Reverse the linked list and return the head of the reversed list.
-package LinkedListProblems.LLCreation;
+package LinkedListProblems.LLCreation.Day2;
 
 class Nodes {
     Nodes next;
