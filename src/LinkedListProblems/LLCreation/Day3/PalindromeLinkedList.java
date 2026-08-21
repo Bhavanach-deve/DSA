@@ -11,34 +11,43 @@ class Nod{
 }
 public class PalindromeLinkedList
 {
-    public static boolean isPalindrome(Nod head)
-    {
-        if(head==null || head.next==null){
+    public static boolean isPalindrome(Nod head) {
+
+        if (head == null || head.next == null) {
             return true;
         }
-        Nod mid=getMiddle(head);
-        Nod secondHalf=reverse(mid.next);
 
-        Nod firstHalf=head;
-        Nod temp=secondHalf;
+        Nod slow = head;
+        Nod fast = head;
 
-        while(temp!=null){
-            if(firstHalf.data!=temp.data){
+        // Find middle
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        // For odd length, skip the middle node
+        if (fast != null) {
+            slow = slow.next;
+        }
+
+        // Reverse second half
+        Nod secondHalf = reverse(slow);
+
+        // Compare
+        Nod firstHalf = head;
+
+        while (secondHalf != null) {
+
+            if (firstHalf.data != secondHalf.data) {
                 return false;
             }
-            firstHalf=firstHalf.next;
-            temp=temp.next;
+
+            firstHalf = firstHalf.next;
+            secondHalf = secondHalf.next;
         }
+
         return true;
-    }
-    public static Nod getMiddle(Nod head){
-        Nod slow=head;
-        Nod fast=head;
-        while(fast!=null && fast.next.next!=null){
-            slow=slow.next;
-            fast=fast.next.next;
-        }
-        return slow;
     }
     public static Nod reverse(Nod head){
         Nod prev=null;
