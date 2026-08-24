@@ -61,8 +61,6 @@ public class PartitionALinkedList
         n.next.next.next.next.next=new Nodes(2);
         n.next.next.next.next.next.next=new Nodes(3);
 
-
-
         Nodes ans=partition(n,3);
         while(ans!=null){
             System.out.print(ans.data+" ");
