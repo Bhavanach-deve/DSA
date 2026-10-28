@@ -3,7 +3,7 @@ package Strings.Day1;
 public class CheckPalindrome
 {
     public static boolean isPalindorme() {
-        String s = "adam";
+        String s = "madam";
         int i = 0;
         int j = s.length() - 1;
         boolean flag = false;
