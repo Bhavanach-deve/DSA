@@ -1,4 +1,4 @@
-package StacksAndQueues;
+package StacksAndQueues.Stacks;
 
 public class LinkedListStack
 {

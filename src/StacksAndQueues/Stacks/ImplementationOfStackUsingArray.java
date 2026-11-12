@@ -1,4 +1,4 @@
-package StacksAndQueues;
+package StacksAndQueues.Stacks;
 
 class ArrayStack{
     int []arr;
