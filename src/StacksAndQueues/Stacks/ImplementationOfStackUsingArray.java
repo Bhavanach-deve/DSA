@@ -67,6 +67,7 @@ public class ImplementationOfStackUsingArray
         System.out.println();
         stack.peek();
         stack.printStack();
+        System.out.println("The size of the stack: "+stack.size());
 
     }
 }
