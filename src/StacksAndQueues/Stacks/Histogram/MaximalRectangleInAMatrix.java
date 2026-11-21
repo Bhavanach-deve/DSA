@@ -1,11 +1,32 @@
-package StacksAndQueues.Stacks;
+package StacksAndQueues.Stacks.Histogram;
 
 import java.util.Stack;
 
-public class LargestRectangleAreaInAHistogram
+public class MaximalRectangleInAMatrix
 {
-    public static int largetRectangleArea(int[]heights){
-        Stack<Integer>st=new Stack<>();
+    public static int maximalRectangle(int[][] matrix)
+    {
+        int n=matrix.length;
+        int m=matrix[0].length;
+        int prefix[]=new int[m];
+        int maxArea=0;
+        for(int j=0;j<n;j++){
+
+            for(int i=0;i<m;i++){
+
+                if(matrix[j][i]==1){
+                    prefix[i]++;
+                }else{
+                    prefix[i]=0;
+                }
+            }
+            maxArea=Math.max(maxArea,maxAreaInHistogram(prefix));
+        }
+        return maxArea;
+    }
+    public static int maxAreaInHistogram(int[]heights)
+    {
+        Stack<Integer> st=new Stack<>();
         int n=heights.length;
         int maxArea=0;
         for(int i=0;i<n;i++){
@@ -42,8 +63,8 @@ public class LargestRectangleAreaInAHistogram
 
     public static void main(String[] args)
     {
-        int arr[]={60,20,50,40,10,50,60};
-        System.out.println(largetRectangleArea(arr));
+        int [][]matrix={{1,0,1,0,1},{1,0,1,1,1},{1,1,1,1,1},{1,0,0,1,0}};
+        System.out.println(maximalRectangle(matrix));
 
     }
 }
