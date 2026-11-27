@@ -123,6 +123,7 @@ public class LRUCache
         cache.printCache();
         System.out.println("Before PUT(5, 7):");
         cache.printCache();
+
         cache.put(5,7);
         System.out.println("After PUT(5, 7):");
 
